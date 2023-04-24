@@ -1,0 +1,29 @@
+SELECT * FROM instacustomers.instacustomer;
+use  instacustomers;
+insert into instacustomer  values(55822222,"ARPITA","ARAPITA123","123aRIPTA",101,"hubli");
+insert into instacustomer  values(55824422,"Ravi","Ravi123","Ravi234",102,"dharwad");
+insert into instacustomer  values(5582622,"raji","raji","rajio123",104,"mysore");
+insert into instacustomer  values(558262222,"kalavati","kalavati13","kala132",103,"bagalkot");
+insert into instacustomer  values(558822222,"sou","sou123","sou567",107,"bangalore");
+truncate table instacustomer;
+
+what is difference between truncate ,drop,delete?
+truncate :it will delete table name;
+drop : it will delete database name;
+delete: it will delete particular rows from column name;
+alter table instacustomer add permanentAddress varchar(25);
+select MAX(InstaIdNumber) From instacustomer;
+SELECT COUNT(*)FROM instacustomer Where InstaIdNumber=101;
+select * from instacustomer Order by UserName desc;
+
+
+update instacustomer Set UserName="Ravikumar123",Password="Rk123" where InstaIdNumber=102;
+
+
+
+
+
+
+
+
+

@@ -364,14 +364,58 @@ It shows essential feature without including background details or explanation
 
 It is used for hiding the data and giving the relevent data
 
-outer layer used in terms of design
+outer layer used in terms of design.
 
 Hiding internal implementation details and hightlight the set of service what are offering is called abstraction 
 ex:Bank ATM Machine
 
 
 advantages
-Without affecting outside the person.we can achieve internal implementation
+Without affecting outside the person.we can achieve internal implementation.
+
+
+Encapsulation:
+
+Wrapping up of data and function into single unit is called encapsulation
+
+if any java class follows data hiding and abstraction such type of class is called encapsulation.
+
+encapsulation=data hidding +abstaraction
+
+
+Data hiding:
+Hiding of the data outside person can't access our data directly
+
+By using private modifier we can implement data hiding.
+
+
+class Account{
+	private double balance=10000;
+	//setter & getter method
+}
+
+advantages:
+we can achieve security
+
+3)ploymorphism
+same name with different form is the concept of ploymorphism
+
+2 types:
+1)complile/static /early binding/overloading 
+2)Runtime /dynamic/late binding/overriding
+
+overloading:if more than one method same name with same identify but with different signature(arguments)is called method overloading
+
+overriding:if two methods have same name with same argument.this is called as method overriding
+
+overiding it is possible to use with inheritance
+
+overiding method is called runtime ploymorphism
+
+
+
+
+
 
 
 
