@@ -1,0 +1,377 @@
+what is java?
+java is a class based object oriented programming language
+
+First version of (jdk 1.0)it was introduced by microsystem
+
+
+syntax:
+class class_name{
+
+    public static void main(String args[]){
+
+        System.out.println("Hello world!");
+    }
+}
+
+public is an access specifier that declared the main method() as unprotected this is similar to c++ public modifier
+
+
+void:does not return any value;
+
+
+Datatypes:
+boolean data type:true (1) or false (0)
+byte data type: 
+char data type:single charcter
+short data type:
+int data type
+long data type
+float data type == ex :float a=123.4f
+double data type
+
+control statement:
+The statments in the code are excecuted accroding to the order in which they appear,however,java provides stmts that can be used to control the flow of java code.such statments 
+are control statements.
+
+Three type of Control statements
+1)Decision making statements
+a)if statements
+
+
+i)simple if-statements
+
+syntax:
+if(cond){
+    //statement
+}
+
+ii)if-else statement
+syntax:
+if(cond){
+    //statement
+}else{
+    //statement
+}
+iii)if else if
+
+syntax:
+if(cond){
+    //statement
+}else if(cond){
+    //statement
+}else{
+    //stmt n
+}
+iv)nested if
+if(cond){
+    if(cond){
+    //statement
+}else if(cond){
+    //statement
+}else{
+    //stmt n
+}
+}
+else{
+    //stmt
+}
+
+
+b)switch statement
+
+syntax:
+
+datatype variablename;
+switch(expression){
+    case 'a':
+    sysout("a");
+    break;
+
+    case 'i':
+    sysout("i");
+    
+    default:
+    sysout("it is not vowel")
+}
+
+2)Loop statement
+3)Error 
+
+ECLIPSE:
+public class IfStmt {
+
+	public static void main(String[] args) {
+		int a=10;int b=20;int c=30;
+		String name="madhu";
+		if(b==20) {//true
+								if(c==20) {//false
+									System.out.println("hi");
+								}else if(a==b) {//false
+									System.out.println("hello");
+								}else {
+									System.out.println("none of above");
+								}
+								}
+		else {
+			System.out.println("none");
+		}
+	}
+
+}
+EXAMPLE:
+public class SwitchStatement {
+
+	public static void main(String[] args) {
+	
+		//aeiou
+		char ch='i';
+		switch(ch) {
+		
+		case 'a':
+			System.out.println(" a is vowel");
+			break;
+		
+		case 'e':
+			System.out.println(" e is vowel");
+			break;
+		case 'i':
+			System.out.println(" i is vowel");
+			break;
+		
+		case 'o':
+			System.out.println(" o is vowel");
+			break;
+			
+		case 'u':
+			System.out.println(" u is vowel");
+			break;
+			
+			default:
+				System.out.println(ch +" is not vowel");
+		}
+		
+
+	}
+
+}
+
+2)Loop statement
+a)do while
+b)while Loop
+c)for Loop
+d)for each Loop
+
+for Loop:
+syntax:
+for(initialization;condition;increament/decreament){
+	//stmt
+}
+
+forEach
+syntax:
+for(datatype va;arrayname/collection_name){
+	//stmt
+}
+
+while
+condition is checked at the start of the loop.if the condition is true,then the loop body will be excecuted ;otehrwise the stmts after loop will be excecuted
+
+syntax:
+while(condition){
+	//stmt
+}
+
+public class DoWhile {
+	
+	public static void main(String[] args) {
+		int i = 0;
+		do {
+		  System.out.println(i);
+		  i++;
+		}
+		while (i < 5);
+	}
+
+}
+2)
+package controlStmt;
+
+public class ForEach {
+
+	public static void main(String[] args) {
+		
+		int[] n1= {0,1,2,3};
+		for(int number:n1) {
+			System.out.println(number);//how to find out length
+		}
+	}
+	
+
+}
+
+3)public class IfStmt {
+
+	public static void main(String[] args) {
+		int a=10;int b=20;int c=30;
+		String name="madhu";
+		if(b==20) {//true
+								if(c==20) {//false
+									System.out.println("hi");
+								}else if(a==b) {//false
+									System.out.println("hello");
+								}else {
+									System.out.println("none of above");
+								}
+								}
+		else {
+			System.out.println("none");
+		}
+	}
+
+}
+
+4)
+public class SwitchStatement {
+
+	public static void main(String[] args) {
+	
+		//aeiou
+		char ch='i';
+		switch(ch) {
+		
+		case 'a':
+			System.out.println(" a is vowel");
+			break;
+		
+		case 'e':
+			System.out.println(" e is vowel");
+			break;
+		case 'i':
+			System.out.println(" i is vowel");
+			break;
+		
+		case 'o':
+			System.out.println(" o is vowel");
+			break;
+			
+		case 'u':
+			System.out.println(" u is vowel");
+			break;
+			
+			default:
+				System.out.println(ch +" is not vowel");
+		}
+		
+
+	}
+
+}
+
+5)public class While {
+
+	public static void main(String[] args) {
+		int i=1;
+		while(i<=10) {
+			System.out.println(i);//even number?
+			i=i+2;
+		}
+		
+	}
+
+}
+
+6)
+package controlStmt;
+
+public class While1 {
+public static void main(String[] args) {
+	int i = 0;
+	while (i < 5) {//5<5(true)
+	  System.out.println(i);
+	  i++;
+	}
+}
+}
+
+
+Variable:is a name of memory location
+there are three types of variables in java
+
+1)local
+2)instance
+3)static
+
+local:a variable declared inside the body of the method is called local variable
+
+you can use this variable only within that method and other methods in the class
+
+local variable cannot be defined with "static "keyword
+
+instance:
+a variable declared inside the class but outside the body of the method is called an instance variable.
+it is not declared as static
+
+static:
+a variable that is declared as static is called a static variable .
+it cannot be local.
+
+methods in java
+a method is a block of code or collection of  statements or a set of code grouped together to perform a certain task or operation
+
+advantages
+resuablility of code
+we write a method once and use it many times.
+
+constructor in java?
+
+Constructor is special type of member function/method which is used to initialization the object.
+constructor is a block of codes similar to the method.
+It is method when an instance of the class is created
+
+
+There are two types of constructor
+1)parameterized constructor
+2)default constructor
+
+
+Rules:
+1)Constructor name must be the same as its class name
+2)a constructor must have no explicit return type.
+
+3)java constructor cannot be abstract,static,final and synchronized
+
+java oops concepts:
+oop:object  oreinted programming
+
+a)inheritance
+b)abstraction
+c)ploymorphism
+d)encapsulation
+e)class
+d)object
+
+
+Notes:
+Everything is an object
+Developer manipulates objects that uses message passing.
+Every object is an instance of a class
+
+class:
+is a nothing but collection of objects
+
+abstraction:
+It shows essential feature without including background details or explanation
+
+It is used for hiding the data and giving the relevent data
+
+outer layer used in terms of design
+
+Hiding internal implementation details and hightlight the set of service what are offering is called abstraction 
+ex:Bank ATM Machine
+
+
+advantages
+Without affecting outside the person.we can achieve internal implementation
+
+
+
