@@ -18,8 +18,9 @@ public is an access specifier that declared the main method() as unprotected thi
 
 void:does not return any value;
 
-
+=========================================+++++++++++++++++++++++++++++++++++=========================
 Datatypes:
+=========================================+++++++++++++++++++++++++++++++++++=========================
 boolean data type:true (1) or false (0)
 byte data type: 
 char data type:single charcter
@@ -29,7 +30,9 @@ long data type
 float data type == ex :float a=123.4f
 double data type
 
+=========================================+++++++++++++++++++++++++++++++++++=========================
 control statement:
+=========================================+++++++++++++++++++++++++++++++++++=========================
 The statments in the code are excecuted accroding to the order in which they appear,however,java provides stmts that can be used to control the flow of java code.such statments 
 are control statements.
 
@@ -293,6 +296,9 @@ public static void main(String[] args) {
 }
 }
 
+=========================================+++++++++++++++++++++++++++++++++++=========================
+Variable
+=========================================+++++++++++++++++++++++++++++++++++=========================
 
 Variable:is a name of memory location
 there are three types of variables in java
@@ -340,7 +346,9 @@ Rules:
 
 3)java constructor cannot be abstract,static,final and synchronized
 
+=========================================+++++++++++++++++++++++++++++++++++=========================
 java oops concepts:
+=========================================+++++++++++++++++++++++++++++++++++=========================
 oop:object  oreinted programming
 
 a)inheritance
@@ -411,6 +419,118 @@ overriding:if two methods have same name with same argument.this is called as me
 overiding it is possible to use with inheritance
 
 overiding method is called runtime ploymorphism
+
+
+Inheritance:
+Inheritance is relation ship between more than one class is called inheritance.
+
+=========================================+++++++++++++++++++++++++++++++++++=========================
+Type casting
+=========================================+++++++++++++++++++++++++++++++++++=========================
+:is a method or process that converts a data type into another data type.
+
+
+type of type casting
+widening type casting
+narrowing type casting
+
+=========================================+++++++++++++++++++++++++++++++++++=========================
+Exception:
+=========================================+++++++++++++++++++++++++++++++++++=========================
+Exception is an event that distrupts the normal flow of the program .It is an object which is thrown at runtime.
+
+Exception handling:
+:is a mechanism to handle runtime errors such as ClassNotFoundException,IO Exeption,sql  Exception ,Remote Exception.
+
+Advantages of Exception handling
+
+This is to maintain the normal flow of the application
+
+Ex:
+If you have 10 statements in java program and an exception occurs at statement 7.
+the rest of the code will not be excecuted.therefore statements 8 to 10 will not be excecuted
+,However , when we perform exception handling.the rest of the statements will not be excecuted.that is why we
+use exception handling in java
+
+
+Type of Exception
+checked Exception
+unchecked Exception 
+Error
+
+Checked Exception:
+The exception which are checked by compiler for smooth excecution of program at runtime its called checked exception
+
+if your method throught checked Exception then it should handle exception using try catch block or throws keyword.otehrwise
+program will give compilation errors
+
+ex:
+sql exception
+io exception
+ClassNotFoundException
+
+unchecked Exception
+Exception which are not checked by the compiler are called Unchecked Exception
+
+
+Ex:
+NullPointerException
+ArrayIndexOutofBoundException
+illegalArgumentException
+IllegalStateException
+
+
+Error:
+Error is irrecoverable
+
+EX:
+OutOfMemoryError,VirtualMachineError
+
+UserDefined Exception:
+1)All Exception must be child of throwable
+2)Throw Keyword always returns inside method
+
+
+Thread:
+Generally all the program have atlease one thread known as the main method that is provided by the jvm or java virtual Machineat the starting of program's 
+exception
+
+Excecuting several task simultaneously where each task is separate independent part of the same program is called thread
+2 method
+by extending thread class
+by implementing runnable interface
+
+Lifecycle of thread?
+New:In this state,Thread class object is created using new operator,but thread is not a live.thread does not start until
+we call the start()method.
+
+Runnable():thread is ready to run  after calling the start() method.
+thread is not yet selected by the thread shedular
+
+Running:Thread shedular picks the thread from the ready state, & method,thread is running.
+
+
+wait():a thread is not running but still  alive or its waiting for other thread to finish.
+
+Multithreading:
+Multithreading is a process of excecuting multiple threads simultaneously,Multithreading is used to obtain the multitasking.it consumes less memory
+and gives the fast and effient performance
+
+Advantages
+Thread is lightweight
+thread share the same address space
+the cost of communication between the process is low.
+
+
+
+
+
+
+
+
+
+
+
 
 
 
