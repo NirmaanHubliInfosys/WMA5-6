@@ -152,10 +152,7 @@ public class SwitchStatement {
 			default:
 				System.out.println(ch +" is not vowel");
 		}
-		
-
 	}
-
 }
 
 2)Loop statement
@@ -520,6 +517,113 @@ Advantages
 Thread is lightweight
 thread share the same address space
 the cost of communication between the process is low.
+
+java Array 
+java array is an object which contains elements of similar data type
+Homogenious allows
+size is fixed 
+Array is alwasy starts from 0th index to n-1.
+
+Advantages:It makes the code optimized,we can retrieve or sort the data effiently
+
+Random Access:
+We can get any data located at an index position.
+
+size is limit
+
+There are two types of Array
+Single Dimensional Array
+Multidemensional Array
+
+syntax:
+dataType[] arr or dataType[] arr;
+dataType arr[];
+
+Collections:
+why we need to go for collections?
+what is collection framework ?
+Collection Hierachy
+List interface & implementations
+Set interface & implementations
+Queue interface & implementations
+Map interface & implementations
+
+like 
+1 ,2,3,4,5,7-----------100
+int a=10;
+
+int b=20;
+int c=30;
+...
+..
+int n=100;
+
+disadvantages:
+size will take more
+memory is more 
+not recommended to overcome this problem Arrays concept class_name
+
+Array:
+We can store group of values in single variable
+int[]a=new int[5];
+
+Ex:
+public class Array {
+
+	public static void main(String[] args) {
+//		dataType[] arr
+		int [] arr= {10,20,30,40,50,60,70};
+
+//		arr[1]=20;
+//		arr[2]=30;
+//		arr[3]=40;
+//		arr[4]=50;
+
+		for(int i=0;i<arr.length;i++) {
+			System.out.println(arr[i]);
+		}
+	}
+
+}
+
+Limitations of Array:
+Array size is fixed
+can't increase size
+can't decrease size
+2)we can store only Homogenious values(same type 0f values)
+
+Homogenious means:int a[]=new int [5];
+
+Object:
+100 student objects in a one variable
+Limitations:
+fixed size
+every requirement program shoulld write logically
+we can store Homogenious an hetrogenious 
+
+
+Collections:
+To overcome Arrays concept problem so collection came 
+Collection are used to group of objects/values
+
+Collection are used to gropu of Objects/values
+
+Collections are growable in nature dynamically size can be increased and decreased based on data
+
+we can store any type of data in collection
+
+customized(homogenious and hetrogenious)
+
+collections providing predefined methods to insert,update,delete,retrieve,sort.
+
+Collection is an entity/container which is use to store group of object
+
+Collections is framework 
+Framework means ready made software
+
+Collections is called as framework bcz its providing predefined interfaces,class and method tp perfp=omr on data.
+
+
 
 
 
