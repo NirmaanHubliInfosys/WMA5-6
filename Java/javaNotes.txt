@@ -621,7 +621,57 @@ Collection is an entity/container which is use to store group of object
 Collections is framework 
 Framework means ready made software
 
-Collections is called as framework bcz its providing predefined interfaces,class and method tp perfp=omr on data.
+Collections is called as framework bcz its providing predefined interfaces,class and method to perform on data.
+
+List:
+This category is used to store group of individual elements where the elements can be duplicated
+List is an inteface whose object can not be created directly.
+To work  with this category we have to use following implementations class of list interface 
+
+Ex:ArrayList,LinkedList,Vector,stack.
+
+2.Set:
+This category is used to store group of individual elements but they elements can't be duplicated
+Set is an inteface whose object can not be created directly.
+To work  with this category we have to use following implementations class of set interface 
+Ex:
+HashSet,LinkedHashSet and TreeSet
+
+
+3.Queue:
+This category is used to hold the elements about to be processed in FIFO(First In First Out)order
+It is an ordered list of objects with it use limited to inserting elements at the end of the list and deleting elements from the start of the list.
+Ex:PriorityQueue,BlockingQueue
+
+4.Map 
+This category is used to store the element in the form key value pairs where the keys can't be duplicated,values can be duplicated
+Map is an interface whose object cannot be created directly.
+To work with this category ,we have to use following implementations classes of Map interface
+Ex:
+HashMap,LinkedHashMap,TreeMap,HashTable
+
+
+
+Stack:
+Stack is a child of class of Vector and implements list interface
+Stack stores a group of objects using a mechansim called LIFO
+LIFO Stands for last in first out
+
+
+Cursors of Collection Framework
+Cursors are mainlu used to access the elements of any collection
+
+1.iterator
+2.ListIterator
+3.Enumerations
+
+Iterator
+methods
+1)boolean hasNext()
+2)Object next()
+3)void remove()
+
+
 
 
 
